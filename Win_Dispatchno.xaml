@@ -1,0 +1,28 @@
+﻿<Window x:Class="FinishGoodStock.Win_Dispatchno"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinishGoodStock"
+        mc:Ignorable="d"
+        Title="Win_Dispatchno" Height="200" Width="400" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"  PreviewKeyDown="Window_PreviewKeyDown">
+    <Grid>
+        <StackPanel Grid.Row="0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock FontSize="20" Foreground="Blue" FontWeight="Bold" Margin="8" VerticalAlignment="Center" HorizontalAlignment="Left" Text="Dispatch No." />
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+
+                <TextBox x:Name="txtNumber" Text="{Binding VNumber}" FontSize="16" Width="140"
+                      LostFocus="TextBox_LostFocus" GotFocus="TextBox_GotFocus" Margin="7"
+                     KeyUp="TextBox_KeyUp" KeyDown="TextBox_KeyDown"/>
+
+
+                <Button x:Name="btnLedger" HorizontalContentAlignment="Center" Width="54"  Height="30" Content="Ok" FontSize="16" Click="Ledger_Click" />
+            </StackPanel>
+
+            <TextBlock x:Name="lblError" FontSize="12" Foreground="Red" FontWeight="Regular" Margin="8" VerticalAlignment="Center" HorizontalAlignment="Center" Text=""/>
+        </StackPanel>
+
+    </Grid>
+</Window>

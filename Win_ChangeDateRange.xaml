@@ -1,0 +1,26 @@
+﻿<Window x:Class="FinishGoodStock.Win_ChangeDateRange"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinishGoodStock"
+        mc:Ignorable="d"
+        Title="Win_ChangeDateRange"  Height="200" Width="400" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"  PreviewKeyDown="Page_PreviewKeyDown">
+    <Grid>
+        <StackPanel Grid.Row="0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock FontSize="16" Foreground="Blue" FontWeight="Bold" Margin="8" VerticalAlignment="Center" HorizontalAlignment="Left" Text="Change Date" />
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+                <TextBox LostFocus="TextBox_LostFocus" GotFocus="Textbox_GotFocus" Name="txtFromDate" BorderBrush="LightGray" BorderThickness="2" FontSize="16" FontWeight="Regular" Margin="10" HorizontalAlignment="Center" 
+                         Width="150" VerticalAlignment="Center" />
+
+                <TextBox LostFocus="TextBox_LostFocus" GotFocus="Textbox_GotFocus" Name="txtToDate" BorderBrush="LightGray" BorderThickness="2" FontSize="16" FontWeight="Regular" Margin="10" HorizontalAlignment="Center" 
+                         Width="150" VerticalAlignment="Center"  />
+            </StackPanel>
+
+            <TextBlock x:Name="lblError" FontSize="12" Foreground="Red" FontWeight="Regular" Margin="8" VerticalAlignment="Center" HorizontalAlignment="Center" Text=""/>
+        </StackPanel>
+
+    </Grid>
+</Window>

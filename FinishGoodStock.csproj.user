@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ShowAllFiles>true</ShowAllFiles>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\VBundleDispatch.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\VDispatchReturn.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Report.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\VBF.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\VDispatch.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\VGodownTransfer.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\VImport.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\VItem.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\VLogin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\VReelDia.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\VRole.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\VSize.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\VSlip.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\VUser.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\VGodown.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\VGSM.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\VMasterList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\VVoucherList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\VGodownVoucher.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Win_BundleSize.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Win_Dispatchno.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Win_Godown.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Win_Location.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Win_Main.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Win_Message.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Win_ReelDia.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Win_Reelno.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Win_RollNo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Win_SlipLocation.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Win_Status.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Win_Vehicle.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\VBundleDispatch.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\VDispatchReturn.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Report.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\VBF.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\VBusiness.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\VDispatch.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\VGodownTransfer.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\VImport.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\VItem.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\VLogin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\VReelDia.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\VRole.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\VSize.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\VSlip.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\VUser.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\VGodown.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\VGSM.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\VMasterList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\VVoucherList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\VGodownVoucher.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Win_BundleSize.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Win_Dispatchno.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Win_Godown.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Win_Location.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Win_Main.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Win_Message.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Win_ReelDia.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Win_Reelno.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Win_RollNo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Win_SlipLocation.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Win_Status.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Win_Vehicle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

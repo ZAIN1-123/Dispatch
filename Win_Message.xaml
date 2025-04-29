@@ -1,0 +1,23 @@
+﻿<Window x:Class="FinishGoodStock.Win_Message"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinishGoodStock"
+        mc:Ignorable="d"
+                  Title="Win_Message" Height="100" Width="200" WindowStyle="None" WindowStartupLocation="CenterScreen" PreviewKeyDown="Window_PreviewKeyDown">
+    <Grid>
+        <Border BorderBrush="#126094"  BorderThickness="3" >
+            <StackPanel >
+                <TextBlock FontSize="18" x:Name="MyMessage" HorizontalAlignment="Center" Margin="0,15,0,0"  Text="Message" FontWeight="Bold" />
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" >
+                    <TextBlock x:Name="Button1" PreviewMouseDown="Button1_PreviewMouseDown"  Foreground="#126094" FontSize="18" FontWeight="Bold" Margin="15" Text="Yes" />
+                    <TextBlock  x:Name="M1" Margin="15" Text="or" FontSize="18" />
+                    <TextBlock x:Name="Button2" PreviewMouseDown="Button2_PreviewMouseDown"  FontSize="18" FontWeight="Bold" Margin="15" Text="No" Foreground="#126094" />
+                    <TextBlock x:Name="M2" Margin="15" Text="or" FontSize="18" Visibility="Collapsed" />
+                    <TextBlock x:Name="Button3" Visibility="Collapsed" PreviewMouseDown="Button3_PreviewMouseDown"  FontSize="18" FontWeight="Bold" Margin="15" Text="3" Foreground="#126094" />
+                </StackPanel>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

@@ -1,0 +1,39 @@
+﻿<Window x:Class="FinishGoodStock.Win_Main"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinishGoodStock"
+        mc:Ignorable="d"
+        Title="Production" Height="450" Width="800" WindowState="Maximized" Closing="Window_Closing" PreviewKeyDown="Window_PreviewKeyDown" ContentRendered="ThemedWindow_ContentRendered" >
+
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.3*" />
+            <RowDefinition Height="5*" />
+            <RowDefinition Height="0.2*" />
+        </Grid.RowDefinitions>
+
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Focusable="False" Grid.Row="1"  />
+        <Ribbon x:Name="MyMenu" Focusable="False" SelectedIndex="1" Grid.Row="0" >
+            <Ribbon.ApplicationMenu>
+                <RibbonApplicationMenu Visibility="Collapsed" ></RibbonApplicationMenu>
+            </Ribbon.ApplicationMenu>
+          
+        </Ribbon>
+        <StatusBar Height="25" Grid.Row="2" VerticalAlignment="Bottom" >
+            <StatusBarItem DockPanel.Dock="Left">
+                <TextBlock x:Name="lblLoginUser" HorizontalAlignment="Left" Foreground="Black" FontWeight="Regular" FontFamily="verdana" FontSize="12" Visibility="Visible" />
+             
+            </StatusBarItem>
+            <StatusBarItem DockPanel.Dock="Left">
+                <TextBlock Text="|"  HorizontalAlignment="Left" Foreground="Black" FontWeight="Regular" FontFamily="verdana" FontSize="12" Visibility="Visible" />
+            </StatusBarItem>
+            <StatusBarItem DockPanel.Dock="Left">
+                <TextBlock x:Name="lblLicenceUptoDate"  HorizontalAlignment="Left" Foreground="Black" FontWeight="Regular" FontFamily="verdana" FontSize="12" Visibility="Visible" PreviewMouseDown="lblLicenceUptoDate_PreviewMouseDown" />
+
+            </StatusBarItem>
+        </StatusBar>
+    </Grid>
+    
+</Window>

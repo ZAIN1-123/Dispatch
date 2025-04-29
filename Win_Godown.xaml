@@ -1,0 +1,27 @@
+﻿<Window x:Class="FinishGoodStock.Win_Godown"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinishGoodStock"
+        mc:Ignorable="d"
+        Title="Win_Godown" Height="200" Width="400" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"  PreviewKeyDown="Window_PreviewKeyDown">
+    <Grid>
+        <StackPanel Grid.Row="0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock FontSize="20" Foreground="Blue" FontWeight="Bold" Margin="8" VerticalAlignment="Center" HorizontalAlignment="Left" Text="Godown Name" />
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+                <local:AdvanceCombo x:Name="cmbLedger" FontSize="16" FontWeight="Regular" Margin="7" BorderBrush="LightGray" BorderThickness="2" Width="200"
+                                       VerticalAlignment="Center" HorizontalAlignment="Stretch"  Tag="ItemsSource:Ledger" SelectedValue="{Binding Ledger_Id}"
+                                       SelectedValuePath="Id" 
+                                        SelectionChanged="cmbLedger_SelectionChanged" PreviewKeyDown="cmbLedger_PreviewKeyDown" />
+
+                <Button x:Name="btnLedger" HorizontalContentAlignment="Center" Width="50"  Height="30" Content="Ok" FontSize="16" Click="Ledger_Click" />
+            </StackPanel>
+
+            <TextBlock x:Name="lblError" FontSize="12" Foreground="Red" FontWeight="Regular" Margin="8" VerticalAlignment="Center" HorizontalAlignment="Center" Text=""/>
+        </StackPanel>
+
+    </Grid>
+</Window>
