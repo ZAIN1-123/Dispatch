@@ -1,1 +1,440 @@
+1. BF
 
+Column Name	Type	Primary Key	Not Null
+BFId	INTEGER	Yes	Yes
+BF	TEXT	No	No
+| Column Name | Type     | Primary Key | Not Null |
+|-------------|----------|-------------|----------|
+| BFId        | INTEGER  | Yes         | Yes      |
+| BF          | TEXT     | No          | No       |
+
+
+
+2. Godown
+
+Column Name	Type	Primary Key	Not Null
+GodownId	INTEGER	Yes	Yes
+Godown	TEXT	No	No
+| Column Name | Type     | Primary Key | Not Null |
+|-------------|----------|-------------|----------|
+| GodownId    | INTEGER  | Yes         | Yes      |
+| Godown      | TEXT     | No          | No       |
+
+
+
+3. GSM
+
+Column Name	Type	Primary Key	Not Null
+GSMId	INTEGER	Yes	Yes
+GSM	TEXT	No	No
+
+| Column Name | Type     | Primary Key | Not Null |
+|-------------|----------|-------------|----------|
+| GSMId       | INTEGER  | Yes         | Yes      |
+| GSM         | TEXT     | No          | No       |
+
+
+
+4. Roles
+
+Column Name	Type	Primary Key	Not Null
+RoleId	INTEGER	Yes	Yes
+Role	TEXT	No	No
+| Column Name | Type     | Primary Key | Not Null |
+|-------------|----------|-------------|----------|
+| RoleId      | INTEGER  | Yes         | Yes      |
+| Role        | TEXT     | No          | No       |
+
+
+
+
+5. Size
+
+Column Name	Type	Primary Key	Not Null
+SizeId	INTEGER	Yes	Yes
+Size	TEXT	No	No
+
+| Column Name | Type     | Primary Key | Not Null |
+|-------------|----------|-------------|----------|
+| SizeId      | INTEGER  | Yes         | Yes      |
+| Size        | TEXT     | No          | No       |
+
+
+
+
+6. Stock
+
+Column Name	Type	Primary Key	Not Null
+StockId	INTEGER	Yes	Yes
+ItemId	INTEGER	No	No
+GodownId	INTEGER	No	No
+Quantity	REAL	No	No
+
+| Column Name     | Type     | Primary Key | Not Null |
+|------------------|----------|-------------|----------|
+| StockId          | INTEGER  | Yes         | Yes      |
+| ItemId           | INTEGER  | No          | No       |
+| GodownId         | INTEGER  | No          | No       |
+| Quantity         | REAL     | No          | No       |
+
+
+7. DispatchReturnMeta
+
+Column Name	Type	Primary Key	Not Null
+MetaId	INTEGER	Yes	Yes
+DispatchReturnId	INTEGER	No	No
+ItemId	INTEGER	No	No
+Quantity	REAL	No	No
+
+| Column Name     | Type     | Primary Key | Not Null |
+|------------------|----------|-------------|----------|
+| MetaId           | INTEGER  | Yes         | Yes      |
+| DispatchReturnId | INTEGER  | No          | No       |
+| ItemId           | INTEGER  | No          | No       |
+| Quantity         | REAL     | No          | No       |
+
+
+8. GodownTransferMeta
+
+Column Name	Type	Primary Key	Not Null
+MetaId	INTEGER	Yes	Yes
+GodownTransferId	INTEGER	No	No
+ItemId	INTEGER	No	No
+Quantity	REAL	No	No
+
+| Column Name       | Type     | Primary Key | Not Null |
+|--------------------|----------|-------------|----------|
+| MetaId             | INTEGER  | Yes         | Yes      |
+| GodownTransferId   | INTEGER  | No          | No       |
+| ItemId             | INTEGER  | No          | No       |
+| Quantity           | REAL     | No          | No       |
+
+
+9. ReelDia
+
+Column Name	Type	Primary Key	Not Null
+ReelDiaId	INTEGER	Yes	Yes
+ReelDia	TEXT	No	No
+
+| Column Name | Type     | Primary Key | Not Null |
+|-------------|----------|-------------|----------|
+| ReelDiaId   | INTEGER  | Yes         | Yes      |
+| ReelDia     | TEXT     | No          | No       |
+
+10. AuditLog
+
+Column Name	Type	Primary Key	Not Null
+LogId	INTEGER	Yes	Yes
+UserId	INTEGER	No	No
+Action	TEXT	No	No
+Timestamp	TEXT	No	No
+
+| Column Name | Type     | Primary Key | Not Null |
+|-------------|----------|-------------|----------|
+| LogId       | INTEGER  | Yes         | Yes      |
+| UserId      | INTEGER  | No          | No       |
+| Action      | TEXT     | No          | No       |
+| Timestamp   | TEXT     | No          | No       |
+
+
+11. FinancialYear
+
+Column Name	Type	Primary Key	Not Null
+YearId	INTEGER	Yes	Yes
+YearLabel	TEXT	No	No
+StartDate	TEXT	No	No
+EndDate	TEXT	No	No
+
+| Column Name   | Type     | Primary Key | Not Null |
+|---------------|----------|-------------|----------|
+| YearId        | INTEGER  | Yes         | Yes      |
+| YearLabel     | TEXT     | No          | No       |
+| StartDate     | TEXT     | No          | No       |
+| EndDate       | TEXT     | No          | No       |
+
+12. Dispatch
+
+Column Name	Type	Primary Key	Not Null
+DispatchId	INTEGER	Yes	Yes
+Date	TEXT	No	No
+PartyName	TEXT	No	No
+TotalItems	INTEGER	No	No
+
+
+| Column Name   | Type     | Primary Key | Not Null |
+|---------------|----------|-------------|----------|
+| DispatchId    | INTEGER  | Yes         | Yes      |
+| Date          | TEXT     | No          | No       |
+| PartyName     | TEXT     | No          | No       |
+| TotalItems    | INTEGER  | No          | No       |
+
+
+13. DispatchReturn
+
+Column Name	Type	Primary Key	Not Null
+ReturnId	INTEGER	Yes	Yes
+DispatchId	INTEGER	No	No
+ReturnDate	TEXT	No	No
+Remarks	TEXT	No	No
+
+
+| Column Name     | Type     | Primary Key | Not Null |
+|------------------|----------|-------------|----------|
+| ReturnId         | INTEGER  | Yes         | Yes      |
+| DispatchId       | INTEGER  | No          | No       |
+| ReturnDate       | TEXT     | No          | No       |
+| Remarks          | TEXT     | No          | No       |
+
+
+
+14. GodownTransfer
+
+Column Name	Type	Primary Key	Not Null
+TransferId	INTEGER	Yes	Yes
+FromGodownId	INTEGER	No	No
+ToGodownId	INTEGER	No	No
+TransferDate	TEXT	No	No
+
+
+| Column Name       | Type     | Primary Key | Not Null |
+|--------------------|----------|-------------|----------|
+| TransferId         | INTEGER  | Yes         | Yes      |
+| FromGodownId       | INTEGER  | No          | No       |
+| ToGodownId         | INTEGER  | No          | No       |
+| TransferDate       | TEXT     | No          | No       |
+
+
+15. Slip
+
+Column Name	Type	Primary Key	Not Null
+SlipId	INTEGER	Yes	Yes
+ItemId	INTEGER	No	No
+Quantity	REAL	No	No
+DateIssued	TEXT	No	No
+
+
+| Column Name   | Type     | Primary Key | Not Null |
+|---------------|----------|-------------|----------|
+| SlipId        | INTEGER  | Yes         | Yes      |
+| ItemId        | INTEGER  | No          | No       |
+| Quantity      | REAL     | No          | No       |
+| DateIssued    | TEXT     | No          | No       |
+
+
+16. GodownLocation
+
+Column Name	Type	Primary Key	Not Null
+LocationId	INTEGER	Yes	Yes
+GodownId	INTEGER	No	No
+LocationName	TEXT	No	No
+
+
+| Column Name   | Type     | Primary Key | Not Null |
+|---------------|----------|-------------|----------|
+| LocationId    | INTEGER  | Yes         | Yes      |
+| GodownId      | INTEGER  | No          | No       |
+| LocationName  | TEXT     | No          | No       |
+
+
+17. Items
+
+Column Name	Type	Primary Key	Not Null
+ItemId	INTEGER	Yes	Yes
+ItemName	TEXT	No	No
+Unit	TEXT	No	No
+
+
+| Column Name   | Type     | Primary Key | Not Null |
+|---------------|----------|-------------|----------|
+| ItemId        | INTEGER  | Yes         | Yes      |
+| ItemName      | TEXT     | No          | No       |
+| Unit          | TEXT     | No          | No       |
+
+
+
+18. GodownVMaster
+
+Column Name	Type	Primary Key	Not Null
+VMastId	INTEGER	Yes	Yes
+GodownId	INTEGER	No	No
+Volume	REAL	No	No
+
+| Column Name   | Type     | Primary Key | Not Null |
+|---------------|----------|-------------|----------|
+| VMastId       | INTEGER  | Yes         | Yes      |
+| GodownId      | INTEGER  | No          | No       |
+| Volume        | REAL     | No          | No       |
+
+
+
+19. Users
+
+Column Name	Type	Primary Key	Not Null
+UserId	INTEGER	Yes	Yes
+Username	TEXT	No	Yes
+Password	TEXT	No	Yes
+RoleId	INTEGER	No	No
+
+
+| Column Name   | Type     | Primary Key | Not Null |
+|---------------|----------|-------------|----------|
+| UserId        | INTEGER  | Yes         | Yes      |
+| Username      | TEXT     | No          | Yes      |
+| Password      | TEXT     | No          | Yes      |
+| RoleId        | INTEGER  | No          | No       |
+
+
+20. LocationTransfer
+
+Column Name	Type	Primary Key	Not Null
+TransferId	INTEGER	Yes	Yes
+FromLocationId	INTEGER	No	No
+ToLocationId	INTEGER	No	No
+Date	TEXT	No	No
+
+| Column Name       | Type     | Primary Key | Not Null |
+|--------------------|----------|-------------|----------|
+| TransferId         | INTEGER  | Yes         | Yes      |
+| FromLocationId     | INTEGER  | No          | No       |
+| ToLocationId       | INTEGER  | No          | No       |
+| Date               | TEXT     | No          | No       |
+
+
+
+
+
+21. LocationTransferMeta
+
+Column Name	Type	Primary Key	Not Null
+MetaId	INTEGER	Yes	Yes
+TransferId	INTEGER	No	No
+ItemId	INTEGER	No	No
+Quantity	REAL	No	No
+
+
+| Column Name       | Type     | Primary Key | Not Null |
+|--------------------|----------|-------------|----------|
+| MetaId             | INTEGER  | Yes         | Yes      |
+| TransferId         | INTEGER  | No          | No       |
+| ItemId             | INTEGER  | No          | No       |
+| Quantity           | REAL     | No          | No       |
+22. Business
+
+Column Name	Type	Primary Key	Not Null
+BusinessId	INTEGER	Yes	Yes
+Name	TEXT	No	No
+Address	TEXT	No	No
+
+| Column Name   | Type     | Primary Key | Not Null |
+|---------------|----------|-------------|----------|
+| BusinessId    | INTEGER  | Yes         | Yes      |
+| Name          | TEXT     | No          | No       |
+| Address       | TEXT     | No          | No       |
+
+23. Cutters
+
+Column Name	Type	Primary Key	Not Null
+CutterId	INTEGER	Yes	Yes
+CutterName	TEXT	No	No
+
+| Column Name   | Type     | Primary Key | Not Null |
+|---------------|----------|-------------|----------|
+| CutterId      | INTEGER  | Yes         | Yes      |
+| CutterName    | TEXT     | No          | No       |
+
+24. CutterVMaster
+
+Column Name	Type	Primary Key	Not Null
+CutterVMId	INTEGER	Yes	Yes
+CutterId	INTEGER	No	No
+Volume	REAL	No	No
+
+| Column Name   | Type     | Primary Key | Not Null |
+|---------------|----------|-------------|----------|
+| CutterVMId    | INTEGER  | Yes         | Yes      |
+| CutterId      | INTEGER  | No          | No       |
+| Volume        | REAL     | No          | No       |
+
+25. StockBook
+
+Column Name	Type	Primary Key	Not Null
+EntryId	INTEGER	Yes	Yes
+ItemId	INTEGER	No	No
+GodownId	INTEGER	No	No
+Quantity	REAL	No	No
+EntryDate	TEXT	No	No
+
+| Column Name   | Type     | Primary Key | Not Null |
+|---------------|----------|-------------|----------|
+| EntryId       | INTEGER  | Yes         | Yes      |
+| ItemId        | INTEGER  | No          | No       |
+| GodownId      | INTEGER  | No          | No       |
+| Quantity      | REAL     | No          | No       |
+| EntryDate     | TEXT     | No          | No       |
+
+26. Bundle
+
+Column Name	Type	Primary Key	Not Null
+BundleId	INTEGER	Yes	Yes
+ItemId	INTEGER	No	No
+Quantity	REAL	No	No
+
+| Column Name   | Type     | Primary Key | Not Null |
+|---------------|----------|-------------|----------|
+| BundleId      | INTEGER  | Yes         | Yes      |
+| ItemId        | INTEGER  | No          | No       |
+| Quantity      | REAL     | No          | No       |
+
+27. BundleDispatch
+
+Column Name	Type	Primary Key	Not Null
+DispatchId	INTEGER	Yes	Yes
+BundleId	INTEGER	No	No
+Quantity	REAL	No	No
+
+| Column Name     | Type     | Primary Key | Not Null |
+|------------------|----------|-------------|----------|
+| DispatchId       | INTEGER  | Yes         | Yes      |
+| BundleId         | INTEGER  | No          | No       |
+| Quantity         | REAL     | No          | No       |
+28. BundleSize
+
+Column Name	Type	Primary Key	Not Null
+SizeId	INTEGER	Yes	Yes
+SizeLabel	TEXT	No	No
+
+| Column Name   | Type     | Primary Key | Not Null |
+|---------------|----------|-------------|----------|
+| SizeId        | INTEGER  | Yes         | Yes      |
+| SizeLabel     | TEXT     | No          | No       |
+29. BundleStock
+
+Column Name	Type	Primary Key	Not Null
+StockId	INTEGER	Yes	Yes
+BundleId	INTEGER	No	No
+GodownId	INTEGER	No	No
+Quantity	REAL	No	No
+
+| Column Name   | Type     | Primary Key | Not Null |
+|---------------|----------|-------------|----------|
+| StockId       | INTEGER  | Yes         | Yes      |
+| BundleId      | INTEGER  | No          | No       |
+| GodownId      | INTEGER  | No          | No       |
+| Quantity      | REAL     | No          | No       |
+
+30. BundleStockBook
+
+Column Name	Type	Primary Key	Not Null
+EntryId	INTEGER	Yes	Yes
+BundleId	INTEGER	No	No
+GodownId	INTEGER	No	No
+Quantity	REAL	No	No
+EntryDate	TEXT	No	No
+
+| Column Name     | Type     | Primary Key | Not Null |
+|------------------|----------|-------------|----------|
+| EntryId          | INTEGER  | Yes         | Yes      |
+| BundleId         | INTEGER  | No          | No       |
+| GodownId         | INTEGER  | No          | No       |
+| Quantity         | REAL     | No          | No       |
+| EntryDate        | TEXT     | No          | No       |
